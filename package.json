@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "parcel serve src/index.html --https"
+  },
+  "dependencies": {
+    "@types/node": "^13.7.4",
+    "firebase": "^7.9.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.2"
+  }
+}
