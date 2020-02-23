@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "dev": "parcel serve src/index.html --https"
+    "dev": "parcel serve src/index.html --https",
+    "build": "parcel build src/index.html"
   },
   "dependencies": {
     "@types/node": "^13.7.4",
