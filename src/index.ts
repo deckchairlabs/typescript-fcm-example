@@ -4,6 +4,8 @@ import firebaseConfig from './firebase.config'
 
 firebase.initializeApp(firebaseConfig)
 
+const textarea = document.getElementById('token') as HTMLTextAreaElement
+
 if ('serviceWorker' in navigator) {
   try {
     navigator.serviceWorker
@@ -22,7 +24,10 @@ if ('serviceWorker' in navigator) {
               .messaging()
               .getToken()
               .then(token => {
-                alert('FCM token: ' + token)
+                console.log('FCM token: %s', token)
+                if (textarea) {
+                  textarea.value = token
+                }
               })
 
             firebase.messaging().onMessage(payload => {
