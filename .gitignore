@@ -1,4 +1,5 @@
 .cache
 .env.*
+*.pem
 node_modules
 dist

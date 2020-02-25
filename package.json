@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "dev": "parcel serve src/index.html --https",
+    "mkcert": "mkcert localhost 127.0.0.1",
+    "dev": "parcel serve src/index.html --https --cert ./localhost+1.pem --key ./localhost+1-key.pem",
     "build": "parcel build src/index.html"
   },
   "dependencies": {
