@@ -1,6 +1,6 @@
 import * as firebase from 'firebase/app'
 import 'firebase/messaging'
-import firebaseConfig from './firebase.config'
+import { firebaseConfig } from './config'
 
 firebase.initializeApp(firebaseConfig)
 

@@ -1,4 +1,4 @@
-import firebaseConfig from './firebase.config'
+import { firebaseConfig } from './config'
 
 declare var self: ServiceWorkerGlobalScope
 

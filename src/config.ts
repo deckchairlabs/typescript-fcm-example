@@ -1,6 +1,6 @@
 const projectId = process.env.FIREBASE_PROJECT_ID
 
-export default {
+export const firebaseConfig = {
   projectId,
   apiKey: process.env.FIREBASE_API_KEY,
   authDomain: `${projectId}.firebaseapp.com`,
